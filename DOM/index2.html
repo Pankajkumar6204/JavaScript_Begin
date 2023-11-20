@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+</head>
+<body style="background-color: #212121; color: #ffff;">
+    
+</body>
+
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = 'wrapper'
+    div.id = 'main-container'
+    // div.id = Math.round(Math.random() *10 + 1)  // for change id randomly
+    console.log(div.innerHTML);
+    div.setAttribute('title', 'generated title')
+    div.style.backgroundColor = 'orange'
+    div.style.color = 'black'
+    div.style.padding = '16px'
+    div.style.fontSize = '22px'
+
+
+    // div.innerText = 'Chai aur code'
+    const addText = document.createTextNode('Chai aur Code')
+    div.appendChild(addText)
+    document.body.appendChild(div)
+
+    const newPara = document.createElement('p')
+    // console.log(newPara);
+    newPara.className = 'content'
+    newPara.id = 'text'
+    console.log(newPara);
+    newPara.style.backgroundColor = 'white'
+    newPara.style.color = 'red'
+    newPara.style.padding = '17px'
+    newPara.style.fontSize = '30px'
+    const paraText = document.createTextNode('this is a new para and creating for learning javascript')
+    newPara.appendChild(paraText)
+    document.body.appendChild(newPara)
+
+
+    const heading = document.createElement('h1')
+    heading.className = 'main-heading'
+    heading.id = 'header'
+    console.log(heading);
+    heading.style.backgroundColor = 'green'
+    heading.style.color = 'blue'
+    heading.style.padding = '22px'
+
+    const headingText = document.createTextNode('What is Your Aim?')
+    heading.appendChild(headingText)
+    document.body.appendChild(heading)
+</script>
+</html>

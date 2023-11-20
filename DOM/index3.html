@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | learning</title>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+
+    <div class="paragraph">
+        <p>pankaj kumar</p>
+        <p>panka kumar</p>
+    </div>
+
+    <script>
+        const body = document.querySelector('body')
+        body.style.backgroundColor = '#212121'
+        body.style.color = 'white'
+
+
+        function addLanguage(langName){
+            const li = document.createElement('li')
+            li.innerText = `${langName}`
+            document.querySelector('.language').appendChild(li)
+        }
+        addLanguage('Java')
+        addLanguage('Phython')
+
+        // !!!!!!!!!!!!!! optimise way to write code !!!!!!!
+        function addOptiLanguage(langName){
+            const li = document.createElement('li')
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector('.language').appendChild(li)
+        }
+        addLanguage('Cpp')
+        addLanguage('mySQl')
+
+        const subHeading = document.createElement('h3')
+        console.log(subHeading);
+        subHeading.className = 'sub-heading'
+        subHeading.id = 'add-heading'
+        subHeading.style.backgroundColor = 'yellow'
+        subHeading.style.color = 'red'
+        subHeading.style.padding = '22px'
+       const addText = document.createTextNode('this is a heading for begineer students')
+        subHeading.appendChild(addText)
+        document.body.appendChild(subHeading)
+
+
+        function studentName(name){
+            const para = document.createElement('p')
+            para.appendChild(document.createTextNode(name))
+            document.querySelector('.paragraph').appendChild(para)
+        }
+        studentName('rahul kumar')
+        studentName('dileep kumar')
+
+
+        // Edit
+        const selectChild = document.querySelector('p:nth-child(1)')
+        const newName = document.createElement('p')
+        newName.appendChild(document.createTextNode('Monu kumar'))
+        selectChild.replaceWith(newName)
+        
+        
+        // Function using Edit any text
+        const addNewChild = document.querySelector('p:nth-child(2)')
+        function addNewName(nwName){
+            const newName = document.createElement('p')
+            newName.style.color = 'orange'
+            newName.appendChild(document.createTextNode(nwName))
+            addNewChild.replaceWith(newName)
+        }
+        addNewName('Kartik raj')
+
+        // Edit
+        const firstName = document.querySelector('p:first-child')
+        firstName.outerHTML = '<p>Pankaj sahi</p>'
+
+        //Remove
+        const lastName = document.querySelector('p:last-child')
+        lastName.remove()
+    </script>
+</body>
+</html>
