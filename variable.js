@@ -1,31 +1,35 @@
 "use strict"; // for treat all js code as newer version
 
 
-/*variables
+//  variables
 const accountId = 7447474
 var accountEmail = "pankaj@google.com"
 let accountPassword = "435244"
-accountCity = "New Delhi"
+let accountCity = "New Delhi"
 let accountState;
-// accountId = 3 ,not change const value
-//console.log(accountId);
+// accountId = 3 , //not change const value
+console.log('!!!!!!!!!!!!!!!!!!!!!');
+// console.log(accountId);
 
 console.table([accountId, accountEmail, accountPassword,accountCity,accountState]);
-*/
 
 
 // alert( 4 + 4) // show alert on windows
 
 
-/*
-let score = "3jdfh4"
-console.log(typeof score);
-console.log(typeof(score));
 
-let valueInNumber = Number(score)
-console.log(typeof valueInNumber);
-console.log(valueInNumber);
-*/
+// let score = "3jdfh4"
+// console.log(typeof score);
+// console.log(typeof(score));
+
+// let valueInNumber = Number(score)
+// console.log(typeof valueInNumber);
+// console.log(valueInNumber);
+
+// !!!!!!! check value convert number to String 
+// let valueInString = String(valueInNumber)
+// console.log(typeof valueInString)
+// console.log(valueInString)
 
 
 
@@ -66,3 +70,7 @@ console.log(typeof stringNumber);
 // console.log(undefined <= 0);     // false 
 
 
+// console.log('3' + 4);   //!!!!   ans:- 34 
+// console.log(3 + '4');    //!!!!   ans:- 34 
+// console.log('4' + 3 + 2);   // !!!!  ans:- 432 
+// console.log(3 + 2 + '4');    //!!!!   ans:- 54 
