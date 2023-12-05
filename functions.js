@@ -1,28 +1,39 @@
 
 function sayMyName(){
-    console.log("Hello Pankaj");
+    console.log("p");
+    console.log("a");
+    console.log("n");
+    console.log("k");
+    console.log("a");
+    console.log("j");
 }
-sayMyName()
+// sayMyName()
 
 
 // !!!!!! addTwo Numbers functions
 
-// function addTwoNumbers(number1, number2){
-//     console.log(number1 + number2);
-// }
-// addTwoNumbers(3, 4)
+function addTwoNumbers(number1, number2){
+    console.log(number1 + number2);
+}
+// addTwoNumbers(4, 3)
+// addTwoNumbers(4, 'a')
 
 //!!!!!! Make functions!!!!!!!!!!
 function subTwoNumbers(number1, number2){
+    console.log(number1+ number2);
 
-    // let result = number1 - number2
-    // return result
+    let result = number1 + number2
+    return result
     // !!!!!!!!!!!
-    return number1 - number2
+    // console.log('hello');  // before return statement code will compile success!
+    // return number1 + number2
+    // console.log('hello')  // after return statement code will be not compile
 }
+// console.log(subTwoNumbers(3, 4));
+
 const result = subTwoNumbers(6, 2)
 
-// console.log("result:", result);
+console.log("result:", result);
 
 
 // Takes Parameters using functions
@@ -177,5 +188,5 @@ function addNum(num1, num2){
 }
 let result1 = addNum(val1, val2)
 let result2 = addNum(10, 3)
-console.log(result1, result2)
+// console.log(result1, result2)
 // console.log(result2)
