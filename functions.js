@@ -40,8 +40,21 @@ function UserLoggedInMessage(username){
     return `${username} just logged in`
 }
 const userLogged = UserLoggedInMessage('pankaj')
-console.log(userLogged);
+// console.log(userLogged);
 
+
+//!!!! Spread/Rest Operator
+function calculateCartPrice(...num1){
+    return num1
+}
+// console.log(calculateCartPrice(2,2,3,4,11,12,13))
+
+//!!!!! Spread Operator
+function caPankaj(val1, val2,...num2){
+    return num2
+}
+const total = caPankaj(2,3,23,45,56.5)
+// console.log(total)
 
 // Takes Parameters using functions
 
