@@ -75,6 +75,7 @@ if(score != 100){
 console.log(`User power: ${power}`)
 
 
+// !!!! random color change logic !!!!!!!!!!!!!!!
 
 // const submit = ducument.querySelector('.submit')
 // const btn = document.querySelector('.container')
@@ -93,9 +94,120 @@ let randomColor = function() {
 
 
 const body = document.querySelector('body')
-const btn = document.querySelector('button')
-btn.addEventListener('click', function(){
+// const btn = document.querySelector('button')
+// btn.addEventListener('click', function(){
+//     body.style.backgroundColor = randomColor()
+//     body.style.color = 'white'
+// })
+
+
+// setTimeout(() => {
+//     body.style.backgroundColor = randomColor()
+//     // console.log('heloo')
+// }, 100);
+
+
+setInterval(() => {
     body.style.backgroundColor = randomColor()
     body.style.color = 'white'
+}, 1000);
+
+
+// !!!!!!!!  forOf function calling !!!!!!!!!!!
+const arr = [ 1,2,3,4,5]
+for (const num of arr) {
+    // console.log(num)
+}
+
+const greetings = 'HelloPankaj'
+for (const greet of greetings) {
+    // console.log(`Each Char is:${greet}`)
+}
+
+
+// !!!!!!! Map() ITERABLE function !!!!!!!!!!
+const map = new Map()
+map.set('IND', "HINGLISH")
+map.set('USA', 'English')
+map.set('CHINA', 'Chinease')
+map.set('JAPAN', 'Japanease')
+
+for (const [key, value] of map) {
+    // console.log(key,':-', value)
+}
+
+// !!!!!!!! Map() ke Uper Iteration nhi ho sakta hai
+for (const key in map) {
+  console.log(key)
+}
+
+// !!!!! Iterable on Object
+const myObject = {
+    Cpp: 'c++',
+    java: 'Java',
+    javascript: '.Js'
+}
+for (const key in myObject) {
+    // console.log(key ,'of Extension is:', myObject[key])
+}
+
+
+const YourObject = ['p', 'A', 'n', 'K', 'j']
+for (const key in YourObject) {
+//    console.log(YourObject[key])
+}
+
+
+// !!!!!!!! forEach function()
+
+const coding = ['js', 'rubi', 'phy', 'java', 'cpp']
+
+coding.forEach( (item) =>{
+    // console.log(item)
 })
 
+const values = coding.forEach( (item, arr, index) =>{
+    // console.log(item, arr, index)
+    return item;
+})
+console.log(values)
+
+
+const myCoding = [
+    {
+        languageName: 'JavaScript',
+        lanFileName: 'js'
+    },
+    {
+        languageName: 'Java',
+        lanFileName: '.java'
+    },
+    {
+        languageName: 'C++',
+        lanFileName: 'cpp'
+    }
+]
+
+myCoding.forEach( (item) => {
+    // console.log(item.lanFileName)
+})
+
+
+const myNums = [1,2,3,4,5,6,7,8,9, 10]
+
+const numsValues = myNums.filter( (nums) => nums > 4 )
+// console.log(numsValues);
+
+const numsValue = myNums.filter( (num) => {
+    return num < 6
+}) 
+// console.log(numsValue)
+
+
+// !!!!!! Chainning in function
+const newNums = myNums
+               .map( (num) => num *10)
+               .map((num) => num + 1)
+               .filter( (item) => item > 32)
+            //    .forEach( (index) => index)
+console.log(newNums)               
