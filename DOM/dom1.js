@@ -1,8 +1,11 @@
+
 const parent = document.querySelector('.parent')
+const btn = document.querySelector('.btn')
 
 console.log(parent);
 // console.log(parent.children);
 // console.log(parent.children[1].innerHTML);
+
 
 // for(let i = 0; i< parent.children.length; i++){
 //     const element = parent.children[i].innerHTML
@@ -20,3 +23,6 @@ const dayOne = document.querySelector('.day')
 // console.log(dayOne.nextElementSibling.innerHTML)
 
 console.log('NODES:',parent.childNodes);
+
+ 
+

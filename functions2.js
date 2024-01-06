@@ -170,7 +170,7 @@ const values = coding.forEach( (item, arr, index) =>{
     // console.log(item, arr, index)
     return item;
 })
-console.log(values)
+// console.log(values)
 
 
 const myCoding = [
@@ -210,4 +210,4 @@ const newNums = myNums
                .map((num) => num + 1)
                .filter( (item) => item > 32)
             //    .forEach( (index) => index)
-console.log(newNums)               
+// console.log(newNums)               
