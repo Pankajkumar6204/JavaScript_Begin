@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+
+<body>
+    <div id="div1">This is first headings</div>
+
+</body>
+<script>
+    function addNewElem() {
+        const newDiv = document.createElement('div')
+        const newContent = document.createTextNode('Hi this is my new text')
+
+        newDiv.appendChild(newContent)
+
+        const currentDiv = document.getElementById('div1')
+        document.body.insertBefore(newDiv, currentDiv)
+    }
+</script>
+
+</html>
